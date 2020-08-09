@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>SuperClinic</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="container_bar">
+        <div class="container_bar_logo">
+          <img src="./img/logo.png" alt="logo">
+          <div class="title">
+            <div class="container_bar_logo-h1">
+              Superclinic
+            </div>
+            <div class="container_bar_logo-h2">
+              насолодись свободою руху
+            </div>
+          </div>
+        </div>
+        <div class="container_bar_nav">
+          <nav>
+            <ul>
+              <li><a href="#">Переваги</a></li>
+              <li><a href="#">Ціни</a></li>
+              <li><a href="#">Лікування</a></li>
+              <li><a href="#">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container_bar_button">
+<button type="button">Записатись на прийом</button>
+        </div>
+      </div>
+      <!-- top bar -->
+      <div class="container_foundation">
+        <div class="container_foundation_topic">
+<h3>Повний комплекс медичних послуг</h3>
+<h1>Європейські стандарти медичної допомоги</h1>
+<button type="button" name="button">Про клініку</button>
+        </div>
+      </div>
+      <!-- osnova header -->
+    </div>
+  </header>
+  <div class="contacts">
+<div class="contacts_container">
+  <div class="contacts_container_address">
+<p>м. Київ, вул. Еленівська, 8</p>
+  </div>
+  <span></span>
+  <div class="contacts_container_phone">
+<p>(095) 222 22 22 <br>
+(068) 222 22 22 <br>
+(063) 222 22 22</p>
+  </div>
+  <span></span>
+  <div class="contacts_container_email">
+<p>info@clinic.com</p>
+  </div>
+</div>
+  </div>
+  <!-- 2block -->
+  <div class="key">
+    <div class="key_container">
+      <div class="key_container_title">
+        <h3>Підхід до вашого здоровя</h3>
+        <h1>Ключові напрямки</h1>
+        <p>★</p>
+      </div>
+      <div class="key_container_medic">
+        <div  onclick="clickDirection(event, 'nevrology')" class="key_container_medic-nerw keys">
+          <img src="./img/brain.png" alt="">
+          <p>Неврологія</p>
+        </div>
+        <span></span>
+        <div onclick="clickDirection(event, 'massage')" class="key_container_medic-massag keys active" id="active">
+        <img src="./img/massage2.png" alt="">
+          <p>Масаж</p>
+        </div>
+        <span></span>
+        <div onclick="clickDirection(event, 'revmatology')" class="key_container_medic-rewmat keys">
+          <img src="./img/bone.png" alt="">
+          <p>Ревматологія</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div id="nevrology" class="content">
+            <div class="content_info">
+                <h3>Неврологія</h3>
+                <div class="content_info_text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. </p>
+                </div>
+                <button type="button" name="button">Деталі</button>
+            </div>
+            <div class="content_img">
+                <img src="./img/nevrology.png" alt="nevrology">
+            </div>
+
+        </div>
+
+        <div id="massage" class="content">
+            <div class="content_info">
+                <h3>Масаж</h3>
+                <div class="content_info_text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. </p>
+                </div>
+                <button type="button" name="button">Деталі</button>
+            </div>
+            <div class="content_img">
+                <img src="./img/massage.png" alt="massage">
+            </div>
+
+        </div>
+        <div id="revmatology" class="content">
+            <div class="content_info">
+                <h3>Pевматологія</h3>
+                <div class="content_info_text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. </p>
+                </div>
+                <button type="button" name="button">Деталі</button>
+            </div>
+            <div class="content_img">
+                <img src="./img/revmatology.png" alt="revmatology">
+            </div>
+        </div>
+  <script src="script.js" defer>
+  </script>
+</body>
+</html>
